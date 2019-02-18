@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+  <link href="./stylesheets/kdv.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <header id="header" class="header">
+    <div class="header__topline">
+      <div class="header__logo">
+        <img src="../images/kdv-web/logo.png" alt="">
+      </div>
+      <div class="header__contacts">
+          <a href="tel:3-8044-353-60-36" class="header__phone">+38 (044) 353 60 36</a>
+          <a href="tel:7-495-504-36-06" class="header__phone">+7 (495) 504 36 06</a>
+          <a href="mailto:info@karpachoff.com" class="header__email">info@karpachoff.com</a>
+      </div>
+    </div>
+    <div class="header__wrap">  
+      <div class="header__content">
+        <div class="header__subtitle">
+          Спасибо, что решили принять участие в вебинаре
+        </div>
+        <div class="header__title">
+          <%= title %>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="remind">
+    <div class="remind__form__wrap">
+      <div class="remind__form__text">
+        Если вы хотите получить напоминание о вебинаре 
+        на телефон, заполните форму ниже
+      </div>
+      <form id="form" class="form" action="http://delivery.karpachoff.com/add_subscriber.html" accept-charset="utf-8" method="post">
+        <input class="input" type="text" name="custom_zungphone" placeholder="+ 38 (063) 000 00 00" required />
+        <input type="hidden" name="thankyou_url" value=""/>
+       <input type="hidden" name="campaign_token" value="HS" />
+       <button class="button" type="submit">
+         Отправить
+       </button>
+     </form>
+    </div>
+    <div class="remind__text">
+      Мы понимаем, что номер телефона сейчас оставляют с опаской. Чтобы потом все таксисты и магазины мира не навязывали вам свои предложения. 
+    </div>
+    <div class="remind__garantee">
+      Даём <span>гарантию</span>, что мы берём номер, чтобы отправить напоминание в день вебинара. В нём сразу будет ссылка для подключения, вам не придётся заходить на почту. Так что, вы точно <span>не пропустите занятие</span>.
+    </div>
+  </section>
+
+  <section class="important">
+    <div class="important__title">
+      Важные детали о вебинаре
+    </div>
+    <ul class="important__list">
+      <li class="important__item">
+        <span>
+          Как проходит 
+        </span>
+        <span>
+          Онлайн
+        </span>
+      </li>
+      <li class="important__item">
+        <span>
+          Формат участия
+        </span>
+        <span>
+          Бесплатный
+        </span>
+      </li>
+      <li class="important__item">
+        <span>
+          Длительность
+        </span>
+        <span>
+          2 часа
+        </span>
+      </li>
+      <li class="important__item">
+        <span>
+          Дата
+        </span>
+        <span>
+          <%= date %>
+        </span>
+      </li>
+      <li class="important__item">
+        <span>
+          Время 
+        </span>
+        <span>
+          <%= time %>
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="online">
+    <div class="online__title">
+      Почему онлайн - это удобно?
+    </div>
+    <ul class="online__list">
+      <li class="online__item">
+        <span>
+          Доступна перемотка
+        </span>
+        <span>
+          Если вы опоздали или хотите пересмотреть какой-то момент - вам доступна перемотка трансляции
+        </span>
+      </li>
+      <li class="online__item">
+        <span>
+          Удобность просмотра
+        </span>
+        <span>
+          Вы можете смотреть вебинар в любом месте и с любого устройства
+        </span>
+      </li>
+      <li class="online__item">
+        <span>
+          Ответы на вопросы
+        </span>
+        <span>
+          Вы можете написать комментарий и получить на него ответ в прямом эфире
+        </span>
+      </li>
+      <li class="online__item">
+        <span>
+          Это бесплатно
+        </span>
+        <span>
+          Вы получаете бесценную информацию от известного психолога совершенно бесплатно и не выходя из дома
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="bonus">
+    <div class="bonus__title">
+      Бонус за регистрацию
+    </div>
+    <div class="bonus__subtitle">
+      <span>
+        Присоединяйтесь к сообществу единомышленников, 
+      </span>
+      <span>
+        где вы будете бесплатно получать:
+      </span>
+    </div>
+    <ul class="bonus__list">
+      <li class="bonus__item">
+        дополнительный контент по воспитанию
+      </li>
+      <li class="bonus__item">
+        домашние задания
+      </li>
+      <li class="bonus__item">
+        онлайн-поддержку от команды «KARPACHOFF»
+      </li>
+      <li class="bonus__item">
+        уведомления о всех новых вебинарах и курсах от 
+        Дмитрия Карпачёва
+      </li>
+    </ul>
+    <a href="https://www.facebook.com/groups/199927334092645/" class="link">
+      Хочу присоединиться!
+    </a>
+  </section>
+
+
+</body>
+</html>

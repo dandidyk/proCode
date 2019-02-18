@@ -1,0 +1,413 @@
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    min-height: 100%;
+    font-size: 16px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.shadow {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.error {
+    transition: all .8s;
+    border: 1px solid red!important;
+    box-shadow: inset 0 0 30px 2px red
+}
+
+.right {
+    transition: all .8s;
+    border: 1px solid green!important;
+    box-shadow: inset 0 0 30px 2px green
+}
+
+.link {
+    display: inline-block;
+    padding: 1.2em 2em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff8500;
+    border-radius: 40px;
+    margin: 0 0;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.header {
+    position: relative;
+    background-image: url(../images/kdv-web/header_bg.png);
+    background-size: cover;
+    background-position: center
+}
+
+.header__wrap {
+    padding: 0 calc(50% - 585px) 20px;
+    position: relative
+}
+
+.header__topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px calc(50% - 585px) 20px
+}
+
+.header__logo {
+    max-width: 235px
+}
+
+.header__logo img {
+    width: 100%
+}
+
+.header__contacts {
+    max-width: 300px
+}
+
+.header__email,
+.header__phone {
+    text-decoration: none;
+    display: block;
+    font-size: 1.125em;
+    color: #489ad8;
+    margin: 7px 0
+}
+
+.header__content {
+    padding-top: 8%;
+    text-align: center
+}
+
+.header__title {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 30px auto;
+    font-size: 3em;
+    padding: 2px 5px;
+    max-width: 750px;
+    margin-bottom: 30%
+}
+
+.header__subtitle {
+    font-size: 1.5em;
+    margin: 50px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff
+}
+
+.remind__form__wrap {
+    background-color: #171717;
+    padding: 20px;
+    max-width: 850px;
+    margin: -100px auto 30px;
+    position: relative
+}
+
+.remind__form__wrap .form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 30px auto
+}
+
+.remind__form__wrap .input {
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 1.125em;
+    border: none;
+    background: 0 0;
+    border-bottom: 2px solid #ff8500
+}
+
+.remind__form__wrap .button {
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #ff8500;
+    padding: 15px 35px;
+    border-radius: 40px;
+    color: #fff;
+    border: none
+}
+
+.remind__form__text {
+    max-width: 650px;
+    font-size: 1.125em;
+    color: #fff;
+    margin: 30px auto;
+    line-height: 1.5;
+    padding-left: 50px;
+    background-image: url(../images/kdv-web/phone.png);
+    background-repeat: no-repeat;
+    background-position: 0 center
+}
+
+.remind__text {
+    max-width: 580px;
+    font-size: 1.125em;
+    color: #171717;
+    margin: 30px auto;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px
+}
+
+.remind__garantee {
+    max-width: 850px;
+    font-size: 1.4em;
+    color: #171717;
+    margin: 30px auto;
+    padding: 30px 15px 20px;
+    line-height: 1.5;
+    text-align: center;
+    background-size: contain;
+    background-image: url(../images/kdv-web/garantee.png);
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.remind__garantee span {
+    color: #ff8500
+}
+
+.important {
+    background-color: #212121;
+    padding: 20px
+}
+
+.important__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: #fff;
+    margin: 30px 0
+}
+
+.important__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 930px;
+    margin: 30px auto
+}
+
+.important__item {
+    margin: 30px 15px;
+    margin-left: 45px;
+    max-width: 310px;
+    position: relative
+}
+
+.important__item::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background-color: #ff8500;
+    left: -30px;
+    top: -10px;
+    transform: rotate(30deg)
+}
+
+.important__item span {
+    display: block;
+    color: #fff;
+    text-align: center
+}
+
+.important__item span:nth-child(1) {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    text-transform: uppercase
+}
+
+.important__item span:nth-child(2) {
+    color: #ff8500;
+    text-transform: uppercase;
+    font-size: 2.3em
+}
+
+.important__item:nth-child(n+4) span:nth-child(2) {
+    font-size: 1.8em
+}
+
+.important__item:nth-child(n+4)::before {
+    left: 0
+}
+
+.online {
+    padding: 20px
+}
+
+.online__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: #fff;
+    margin: 30px 0 60px;
+    color: #212121;
+    position: relative
+}
+
+.online__title::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    background-color: #212121;
+    left: calc(50% - 60px);
+    height: 2px;
+    bottom: -30px
+}
+
+.online__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1260px;
+    margin: 30px auto
+}
+
+.online__item {
+    margin: 30px 10px;
+    max-width: 290px;
+    position: relative;
+    background-image: url(../images/kdv-web/online_i1.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    padding-top: 50px
+}
+
+.online__item span {
+    display: block;
+    color: #212121;
+    text-align: center
+}
+
+.online__item span:nth-child(1) {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-transform: uppercase
+}
+
+.online__item span:nth-child(2) {
+    font-size: 1.125em
+}
+
+.online__item:nth-child(2) {
+    background-image: url(../images/kdv-web/online_i2.png)
+}
+
+.online__item:nth-child(3) {
+    background-image: url(../images/kdv-web/online_i3.png)
+}
+
+.online__item:nth-child(4) {
+    background-image: url(../images/kdv-web/online_i4.png)
+}
+
+.bonus {
+    background-color: #212121;
+    padding: 20px;
+    text-align: center
+}
+
+.bonus__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: #fff;
+    margin: 30px 0
+}
+
+.bonus__subtitle span {
+    display: block;
+    color: #fff;
+    text-align: center
+}
+
+.bonus__subtitle span:nth-child(2) {
+    font-size: 1.5em;
+    margin-bottom: 25px
+}
+
+.bonus__subtitle span:nth-child(1) {
+    color: #ff8500;
+    font-size: 1.8em
+}
+
+.bonus__list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 720px;
+    margin: 30px auto
+}
+
+.bonus__item {
+    line-height: 1.3;
+    text-align: left;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 10px 0;
+    padding-left: 40px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-image: url(../images/kdv-web/bonus_check.png)
+}
+
+.bonus .link {
+    background: 0 0;
+    color: #ff8500;
+    border-radius: 0;
+    border: 1px solid #ff8500;
+    margin-bottom: 60px
+}
+
+@media only screen and (max-width:1200px) {
+    body {
+        font-size: 14px
+    }
+    .header__topline {
+        padding: 20px
+    }
+    .header__wrap {
+        padding: 20px
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header__title {
+        font-size: 2.4em;
+        margin-bottom: 190px
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .header__topline {
+        flex-direction: column
+    }
+    .header__topline img {
+        margin-bottom: 30px
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .header__text {
+        background: #fff;
+        padding: 25px
+    }
+}
